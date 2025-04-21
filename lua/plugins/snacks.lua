@@ -13,7 +13,7 @@ return {
         { section = "startup" },
         {
           section = "terminal",
-          cmd = "ascii-image-converter ~/.config/phoenix-logo.png -C -c",
+          cmd = "ascii-image-converter ~/.config/nvim/phoenix-logo-1.png -C -c",
           ramdom = 10,
           pane = 2,
           indent = 4,
