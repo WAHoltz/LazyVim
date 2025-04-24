@@ -40,6 +40,19 @@ require("lazy").setup({
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
   }, -- automatically check for plugin updates
+  {
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+    {
+      import = "lazyvim.plugins.extras.formatting.prettier",
+      opts = {
+        formatters = {
+          prettier = {
+            prepend_args = { "--single-quote" },
+          },
+        },
+      },
+    },
+  },
   performance = {
     rtp = {
       -- disable some rtp plugins
