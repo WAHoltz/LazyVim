@@ -9,6 +9,8 @@ return {
             client.server_capabilities.documentFormattingProvider = true
           elseif client.name == "tsserver" then
             client.server_capabilities.documentFormattingProvider = false
+          elseif client.name == "eslint.json" then
+            client.server_capabilities.documentFormattingProvider = true
           end
         end)
       end,
